@@ -1,0 +1,177 @@
+<h2>十干十二支覚え書き</h2>
+
+<p>　このページでは、日付（年、月、日）の十干十二支表現についてまとめている。（十二支はこの他にも、方角や時間を表すために用いられている。）</p>
+
+<p>　十干十二支と日付を相互変換する上で、十干、十二支を数値化する必要がある。このページでは一律、以下の数値化テーブルを使用している（各セクションでは便宜上、同じものを適宜引用している）。<br/>
+<table border="1">
+<caption style="text-align:left">十干</caption>
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td></tr>
+<tr><td>甲</td><td>乙</td><td>丙</td><td>丁</td><td>戊</td><td>己</td><td>庚</td><td>辛</td><td>壬</td><td>癸</td></tr>
+</table>
+<table border="1">
+<caption style="text-align:left">十二支</caption>
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>0</td></tr>
+<tr><td>子</td><td>丑</td><td>寅</td><td>卯</td><td>辰</td><td>巳</td><td>午</td><td>未</td><td>申</td><td>酉</td><td>戌</td><td>亥</td></tr>
+</table>
+</p>
+
+<h4>このページで解説している内容</h4>
+
+<ul>
+<li><a href="#ye2gy">年の干支から西暦年を求める</a><font color="red"> ←古文書を読む際に便利!!</font></li>
+<li><a href="#me2gym">月の干支から西暦年下1桁と月（旧暦）を求める</a><font color="red"> ←古文書を読む際に便利!!</font></li>
+<li><a href="#gy2y10">西暦年からその年の十干を求める</a><font color="blue"> ←話のネタとして、、、</font></li>
+<li><a href="#gy2y12">西暦年からその年の十二支を求める</a><font color="blue"> ←話のネタとして、、、</font></li>
+<li><a href="#ym2me">年と月（旧暦）からその月の干支を求める</a><font color="brown"> ←使い途は？？？</font></li>
+<li><a href="#gy2de">グレゴリオ暦による年月日からその日の日干支を求める</a><font color="brown"> ←使い途は？？？</font></li>
+</ul>
+
+
+
+
+<hr>
+<h4 id="ye2gy">年の干支から西暦年を求める</h4>
+<ol>
+<li>十干を数値に変換し、その値をAと置く。<br/>
+<table border="1">
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td></tr>
+<tr><td>甲</td><td>乙</td><td>丙</td><td>丁</td><td>戊</td><td>己</td><td>庚</td><td>辛</td><td>壬</td><td>癸</td></tr>
+</table>
+</li>
+<li>十二支を数値に変換し、その値をBと置く。<br/>
+<table border="1">
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>0</td></tr>
+<tr><td>子</td><td>丑</td><td>寅</td><td>卯</td><td>辰</td><td>巳</td><td>午</td><td>未</td><td>申</td><td>酉</td><td>戌</td><td>亥</td></tr>
+</table>
+</li>
+<li>AからBを引き、結果を2で割る。</li>
+<li>値が負の場合には6を足す。</li>
+<li>その値の右横に、Aの値を付加する（つまり10倍してAを加算する）。</li>
+<li>この値が十干十二支における甲子からの通番となる。</li>
+<li>通番に3を加えた後、60の倍数（年の干支は60年周期で繰り返されるため）を加える。</li>
+</ol>
+
+
+<hr>
+<h4 id="me2gym">月の干支から西暦年下1桁と月（旧暦）を求める</h4>
+<ol>
+<li>十二支を数値に変換して、Aと置く。<br/>
+<table border="1">
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>0</td></tr>
+<tr><td>子</td><td>丑</td><td>寅</td><td>卯</td><td>辰</td><td>巳</td><td>午</td><td>未</td><td>申</td><td>酉</td><td>戌</td><td>亥</td></tr>
+</table>
+</li>
+<li>Aの値に10を足し、12を超えたら12を引く（つまり12で割ったあまりを求める）。<br/>
+これが旧暦の月となる。</li>
+<li>十干を数値に変換して、Bと置く。<br/>
+<table border="1">
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td></tr>
+<tr><td>甲</td><td>乙</td><td>丙</td><td>丁</td><td>戊</td><td>己</td><td>庚</td><td>辛</td><td>壬</td><td>癸</td></tr>
+</table>
+</li>
+<li>Bの値から、上で求めた「月の数値の下1桁」を引き、結果を2で割る。</li>
+<li>値が負の場合には10を足す。</li>
+<li>その結果に、3あるいは8を足した値の下1桁が年の下1桁となる（月の干支は5年で1周するため、年の下1桁は2種類考えられる）。</li>
+</ol>
+
+<hr>
+<h4 id="gy2y10">西暦年からその年の十干を求める</h4>
+<ol>
+<li>西暦年から3を引く。</li>
+<li>下1桁が十干を表す。
+<table border="1">
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td></tr>
+<tr><td>甲</td><td>乙</td><td>丙</td><td>丁</td><td>戊</td><td>己</td><td>庚</td><td>辛</td><td>壬</td><td>癸</td></tr>
+</table>
+</li>
+</ol>
+
+<hr>
+<h4 id="gy2y12">西暦年からその年の十二支を求める</h4>
+<ol>
+<li>西暦年を3で割ったあまりをAと置く。これには以下の手順を実行する。</li>
+  <ol>
+  <li>西暦年の各桁を加算する。<br/>
+  例：1978年の場合、1 + 9 + 7 + 8 = 25<br/>
+  （なお、さらに各桁を加算することも可能）</li>
+  <li>合計を3で割ったあまりをAとする。<br/>
+  例：25 % 3 = 1</li>
+  </ol>
+<li>西暦年+1を4で割ったあまりをBと置く。これには以下の手順を実行する。</li>
+  <ol>
+  <li>西暦年の下2桁を4で割ったあまりに1を加算する。<br/>
+  例：1978年の場合、78 % 4 + 1 = 3
+  <li>その値が4の場合、0とする（4以外の場合はその値を使用する）。
+  </ol>
+<li>Aの値からBの値を引き、Cと置く。ただし、負になった場合は3を加算する。<br/>
+例：1 - 3 + 3 = 1</li>
+<li>Cを4倍し、Bの値を加算した値が十二支を表す。<br/>
+例：1 × 4 + 3
+<table border="1">
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>0</td></tr>
+<tr><td>子</td><td>丑</td><td>寅</td><td>卯</td><td>辰</td><td>巳</td><td>午</td><td>未</td><td>申</td><td>酉</td><td>戌</td><td>亥</td></tr>
+</table>
+</li>
+</ol>
+
+
+<hr>
+<h4 id="ym2me">年と月（旧暦）からその月の干支を求める</h4>
+<ol>
+<li>年から3を引き、結果の下1桁を取り出す。</li>
+<li>その値が5以上であれば、さらに5を引く。</li>
+<li>結果の値（つまり0〜4の値）を2倍して、月の数字を足す。</li>
+<li>10のあまりを求めると、その値が十干となる。<br/>
+<table border="1">
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td></tr>
+<tr><td>甲</td><td>乙</td><td>丙</td><td>丁</td><td>戊</td><td>己</td><td>庚</td><td>辛</td><td>壬</td><td>癸</td></tr>
+</table>
+</li>
+<li>月の数字に2を足し、12で割ったあまりを求めると、その値が十二支となる。<br/>
+<table border="1">
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>0</td></tr>
+<tr><td>子</td><td>丑</td><td>寅</td><td>卯</td><td>辰</td><td>巳</td><td>午</td><td>未</td><td>申</td><td>酉</td><td>戌</td><td>亥</td></tr>
+</table>
+</li>
+</ol>
+
+
+<hr>
+<h4 id="gy2de">グレゴリオ暦による年月日からその日の日干支を求める</h4>
+<ol>
+<li>年の下2桁を20倍した後、元の下2桁を加え、その値を2度、2で割った値をAと置く（小数点以下は切り捨てる）。<br/>
+（結果的に5.25倍したことになる）。</li>
+<li>1900年〜1999年であれば10を、2000年〜2099年であれば55をBと置く（さらに古い日付を求める場合には、以下の説明を参照）。</li>
+<li>以下で示した月の値をCと置く（ただし「++」と表記された小の月は、左隣の値に31を足した値をCとする）。
+<table border="1">
+<tr align="center"><td>1月</td><td>2月</td><td>3月</td><td>4月</td><td>5月</td><td>6月</td><td>7月</td><td>8月</td><td>9月</td><td>10月</td><td>11月</td><td>12月</td></tr>
+<tr align="center"><td>0</td><td>++</td><td>59</td><td>++</td><td>0</td><td>++</td><td>1</td><td>32</td><td>++</td><td>33</td><td>++</td><td>34</td></tr>
+</table>
+</li>
+<li>日の値をDとする。ただし、閏年の1月または2月は1を減算しておく。</li>
+<li>A、B、C、Dの値をすべて足し合わせ、60で割ったあまりをRと置く。</li>
+<li>Rの下1桁が十干を表す。<br/>
+<table border="1">
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td></tr>
+<tr><td>甲</td><td>乙</td><td>丙</td><td>丁</td><td>戊</td><td>己</td><td>庚</td><td>辛</td><td>壬</td><td>癸</td></tr>
+</table>
+</li>
+<li>Rから、12、24、36、48のいずれかの値（結果が負にならない最大値）を引いた値が十二支を表す。<br/>
+<table border="1">
+<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>0</td></tr>
+<tr><td>子</td><td>丑</td><td>寅</td><td>卯</td><td>辰</td><td>巳</td><td>午</td><td>未</td><td>申</td><td>酉</td><td>戌</td><td>亥</td></tr>
+</table>
+</li>
+</ol>
+
+<p><strong>※ 1899年以前のBの求め方：</strong></p>
+
+<p>　1899年以前のBは、以下の手順で求められる。<br/>
+    <ol>
+    <li>西暦年を100で割った値（西暦年が4桁ならば上2桁）をYと置く。</li>
+    <li>Yを4で割った値をZと置く（小数点以下は切り捨てる）。</li>
+    <li>Yを44倍し、Zを足し、さらに10を足した値を60で割ったあまりがBとなる。</li>
+    </ol>
+</p>
+<p>　なお、グレゴリオ暦は1582年10月15日から施行されている暦制度であるため、それ以前の日付（おそらくはユリウス暦で表現されている）の日干支を求める際には、その日付をいったん先発グレゴリオ暦に変換する必要がある点に留意されたい。
+</p>
