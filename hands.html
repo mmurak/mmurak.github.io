@@ -1,0 +1,102 @@
+<h1>西暦から十二支を素早く求める</h1>
+
+<div align="right"><a href="https://mmurak.github.io/%E5%8D%81%E5%B9%B2%E5%8D%81%E4%BA%8C%E6%94%AF.html">覚え書きページの本宅に戻る</a></div>
+
+<h2>1. 左手の計算</h2>
+
+<ol>
+<li>西暦の先頭1桁を見て、その値を3で割ったあまりを左手に作る。</li>
+<li>次の桁を見て、その値を3で割ったあまりを左手に足し込んでいく。ただし、足し込む際には以下のルール（3進数）に従う。つまり、結果は常に0、1、2のいずれかとなる。</li>
+<ul>
+<li>1に2を足すと0になる。</li>
+<li>2に1を足すと0になる。</li>
+<li>2に2を足すと1になる。</li>
+</ul>
+<li>すべての桁を処理するまで、2を繰り返す。</li>
+</ol>
+
+
+<h3>別法</h3>
+<ul>
+<li>すべての桁を足し、その合計を3で割り、あまりを求める。その結果を左手に作る。</li>
+<ul>
+<li>ティップス1： 桁が3の倍数の場合、足す必要はない。</li>
+<li>ティップス2： 集計の中間結果や総計が10以上（つまり2桁）になった場合、それら各桁を足してもよい。</li>
+</ul>
+</ul>
+
+
+
+<h2>2. 右手の計算</h2>
+
+<ol>
+<li>西暦の下2桁だけを使用する。まず、右手で「グー」を作る。</li>
+<li>西暦の下2桁が奇数であれば、親指を立て、下2桁に1を足す。</li>
+<ul>
+<li>その値を2で割る。</li>
+<ul>
+<li>奇数であれば、指2本（人差し指と中指）を開く（親指は握りこんで構わない[*1]）。</li>
+<li>偶数であれば、何もしない（親指は握りこんで構わない[*1]）。</li>
+</ul>
+</ul>
+<li>西暦の下2桁が偶数であれば、人差し指を開く。</li>
+<ul>
+<li>下2桁を2で割る。</li>
+<ul>
+<li>奇数であれば、指2本（中指と薬指）を開く。</li>
+<li>偶数であれば、何もしない。</li>
+</ul>
+</ul>
+</ol>
+
+<p>[*1] ちなみに奇数の際に親指を立てるのは、下2桁に1を加算することを忘れないようにするための「きっかけ」に過ぎず、親指は結果の手のかたちとはまったく関係ない。</p>
+
+<h3>図解--右手の遷移図</h3>
+
+<table>
+<tr><td align="center">下2桁は奇数か偶数か？<br/><img width="100" src="./img/RS0.jpg"/></td><td align="center">→→→→→<br/>奇数</td><td align="center">下2桁に1を足し、<br/>2で割った値は奇数か偶数か？<br/><img width="50" src="./img/RT.jpg"/></td><td align="center">→→→→→<br/>奇数</td><td align="center">指を2本足す<br/><img width="100" src="./img/RS2.jpg"/></td></tr>
+<tr><td align="center">↓　　</td><td></td><td align="center">↓偶数<br/>何もしない</td><td></td><td></td></tr>
+<tr><td align="center">↓偶数</td><td></td><td align="center"><img width="100" src="./img/RS0.jpg"/></td><td></td><td></td></tr>
+<tr><td align="center">↓　　</td><td></td><td></td><td></td><td></td></tr>
+<tr><td align="center">2で割った値は奇数か偶数か？<br/><img width="100" src="./img/RS1.jpg"/></td><td align="center">→→→→→<br/>奇数</td><td align="center">指を2本足す<br/><img width="100" src="./img/RS3.jpg"/></td><td></td><td></td></tr>
+<tr><td align="center">↓偶数<br/>何もしない</td><td></td><td></td><td></td><td></td></tr>
+<tr><td align="center"><img width="100" src="./img/RS1.jpg"/></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+
+
+<h2>3. 結果の見方（形で憶えると西暦から数秒で十二支を求められるようになる）</h2>
+
+<table border="1">
+<tr><th>子</th><th>丑</th><th>寅</th><th>卯</th></tr>
+<tr>
+<td><img width="50" src="./img/L1.jpg"/><img width="50" src="./img/R1.jpg"/></td>
+<td><img width="50" src="./img/L2.jpg"/><img width="50" src="./img/R2.jpg"/></td>
+<td><img width="50" src="./img/L0.jpg"/><img width="50" src="./img/R3.jpg"/></td>
+<td><img width="50" src="./img/L1.jpg"/><img width="50" src="./img/R0.jpg"/></td>
+</tr>
+<tr><th>辰</th><th>巳</th><th>午</th><th>未</th></tr>
+<tr>
+<td><img width="50" src="./img/L2.jpg"/><img width="50" src="./img/R1.jpg"/></td>
+<td><img width="50" src="./img/L0.jpg"/><img width="50" src="./img/R2.jpg"/></td>
+<td><img width="50" src="./img/L1.jpg"/><img width="50" src="./img/R3.jpg"/></td>
+<td><img width="50" src="./img/L2.jpg"/><img width="50" src="./img/R0.jpg"/></td>
+</tr>
+<tr><th>申</th><th>酉</th><th>戌</th><th>亥</th></tr>
+<tr>
+<td><img width="50" src="./img/L0.jpg"/><img width="50" src="./img/R1.jpg"/></td>
+<td><img width="50" src="./img/L1.jpg"/><img width="50" src="./img/R2.jpg"/></td>
+<td><img width="50" src="./img/L2.jpg"/><img width="50" src="./img/R3.jpg"/></td>
+<td><img width="50" src="./img/L0.jpg"/><img width="50" src="./img/R0.jpg"/></td>
+</tr>
+</table>
+
+
+<h3>ちょっとした考察</h3>
+
+<p>　子は両手がそれぞれ1と1、以降は丑、寅、卯・・・と順番に左手は「0, 1, 2, 0, 1, 2, ･･･」の繰り返し、右手は「0, 1, 2, 3, 0, 1, 2, 3, ･･･」の繰り返しとなる。</p>
+
+<p>　式で書くと、（（（左手＋3）−右手） mod 3）×4＋右手　となる（答えは1が子、2が丑、3が寅、・・・0が亥となる／なお mod は剰余を求める演算子）。</p>
+
+
+<div align="right"><a href="https://mmurak.github.io/%E5%8D%81%E5%B9%B2%E5%8D%81%E4%BA%8C%E6%94%AF.html">覚え書きページの本宅に戻る</a></div>
