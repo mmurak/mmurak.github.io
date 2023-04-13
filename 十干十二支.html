@@ -37,7 +37,7 @@
 <li><a href="#me2gym">月の干支から西暦年下1桁と月（旧暦）を求める</a><font color="red"> ←古文書を読む際に便利!!</font></li>
 <li><a href="#gy2y10">西暦年からその年の十干を求める</a><font color="green"> ←話のネタとして、、、</font></li>
 <li><a href="https://mmurak.github.io/hands.html">西暦年からその年の十二支を求める</a><font color="green"> ←話のネタとして、、、</font></li>
-<li><a href="#ym2me">年と月（旧暦）からその月の干支を求める</a><font color="brown"> ←使い途は？？？</font></li>
+<li><a href="#ym2me">年（西暦年）と月（旧暦の月）からその月の干支を求める</a><font color="brown"> ←使い途は？？？</font></li>
 <li><a href="#gy2de">グレゴリオ暦による年月日からその日の日干支を求める</a><font color="green"> ←季節の歳時記を感じたい方に</font></li>
 </ul>
 
@@ -102,22 +102,11 @@
 </ol>
 
 <hr>
-<h2 id="ym2me">年と月（旧暦）からその月の干支を求める</h2>
+<h2 id="ym2me">年（西暦年）と月（旧暦の月）からその月の干支を求める</h2>
 <ol>
-<li>年から3を引き、結果の下1桁を取り出す。</li>
-<li>その値が5以上であれば、さらに5を引く。</li>
-<li>結果の値（つまり0〜4の値）を2倍して、月の数字を足す。</li>
-<li>10のあまりを求めると、その値が十干となる。<br/>
-<table border="1">
-<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td></tr>
-<tr><td>甲</td><td>乙</td><td>丙</td><td>丁</td><td>戊</td><td>己</td><td>庚</td><td>辛</td><td>壬</td><td>癸</td></tr>
-</table>
-</li>
-<li>月の数字に2を足し、12で割ったあまりを求めると、その値が十二支となる。<br/>
-<table border="1">
-<tr align="center"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>0</td></tr>
-<tr><td>子</td><td>丑</td><td>寅</td><td>卯</td><td>辰</td><td>巳</td><td>午</td><td>未</td><td>申</td><td>酉</td><td>戌</td><td>亥</td></tr>
-</table>
+<li>年の下1桁を12倍し、17を足す。</li>
+<li>その値に月の数字を足す。</li>
+<li>この数値を西暦の年号だと考え、<a href="#gy2y10">この項の手順</a>に従って十干を求める。また、<a href="https://mmurak.github.io/hands.html">このページの手順</a>に従って十二支を求め、十干十二支をまとめると月干支になる。</li>
 </li>
 </ol>
 
