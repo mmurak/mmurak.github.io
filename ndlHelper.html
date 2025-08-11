@@ -15,6 +15,13 @@ th{
 th, td{
 	border: 1px solid black;
 }
+.flex-cell {
+  display: flex; /* flexコンテナにする */
+  justify-content: space-between; /* 子要素を両端に配置する */
+  align-items: center; /* 垂直方向の中央揃え */
+  padding: 8px;
+  border: 1px solid #ddd;
+}
 .Full{
 	width: 100%;
 }
@@ -84,7 +91,7 @@ th, td{
 <td>1940</td>
 </tr>
 <tr>
-<td><a href="https://mmurak.github.io/hDaijiten/" target="_blank">『大辭典』</a></td>
+<td><a href="https://mmurak.github.io/hDaijiten/" target="_blank">『大辭典』</a></a><sup>†</sup></td>
 <td></td>
 <td>平凡社</td>
 <td>1934-1936</td>
@@ -142,37 +149,37 @@ th, td{
 <table class="Full">
 <tr><th class="Quarter">書籍名</th><th class="Fifth">著・編者</th><th class="Fifth">出版社</th><th class="Fifth">出版年</th></tr>
 <tr>
-<td><a href="https://mmurak.github.io/komonjo/daijiten.html" target="_blank">『古文書大字典』</a><sup>†</sup></td>
+<td class="flex-cell"><span><a href="https://mmurak.github.io/komonjo/daijiten.html" target="_blank">『古文書大字典』</a><sup>†</sup></span><!--span>概要説明</span--></td>
 <td>浅井潤子, 藤本篤 編著</td>
 <td>柏書房</td>
 <td>1987</td>
 </tr>
 <tr>
-<td><a href="https://mmurak.github.io/komonjo/bunreiDaijiten.html" target="_blank">『古文書文例大字典』</a><sup>†</sup></td>
+<td class="flex-cell"><span><a href="https://mmurak.github.io/komonjo/bunreiDaijiten.html" target="_blank">『古文書文例大字典』</a><sup>†</sup></span><!--span>概要説明</span--></td>
 <td>岩沢愿彦 [ほか]編</td>
 <td>柏書房</td>
 <td>1980</td>
 </tr>
 <tr>
-<td><a href="https://mmurak.github.io/komonjo/jisou.html" target="_blank">『古文書字叢』</a><sup>†</sup></td>
+<td class="flex-cell"><span><a href="https://mmurak.github.io/komonjo/jisou.html" target="_blank">『古文書字叢』</a><sup>†</sup></span><!--span>概要説明</span--></td>
 <td>根岸茂夫 [ほか]編</td>
 <td>柏書房</td>
 <td>1990</td>
 </tr>
 <tr>
-<td><a href="https://mmurak.github.io/komonjo/kokirokuNankunYoureiDaijiten.html" target="_blank">『古文書古記録難訓用例大辞典』</a><sup>†</sup></td>
+<td class="flex-cell"><span><a href="https://mmurak.github.io/komonjo/kokirokuNankunYoureiDaijiten.html" target="_blank">『古文書古記録難訓用例大辞典』</a><sup>†</sup></span><!--span>概要説明</span--></td>
 <td>林陸朗監修</td>
 <td>柏書房</td>
 <td>1989</td>
 </tr>
 <tr>
-<td><a href="https://mmurak.github.io/kanjiGyoSo/" target="_blank">『常用漢字行草辞典』</a><sup>†</sup></td>
+<td class="flex-cell"><span><a href="https://mmurak.github.io/kanjiGyoSo/" target="_blank">『常用漢字行草辞典』</a><sup>†</sup></span><!--span>概要説明</span--></td>
 <td>児玉幸多編</td>
 <td>近藤出版社</td>
 <td>1983</td>
 </tr>
 <tr>
-<td><a href="https://mmurak.github.io/kudushi/index.html" target="_blank">『漢字くづし方辞典』</a></td>
+<td class="flex-cell"><a href="https://mmurak.github.io/kudushi/index.html" target="_blank">『漢字くづし方辞典』</a></td>
 <td>内海弘蔵編、玉木愛石書</td>
 <td>博多成象堂</td>
 <td>1928</td>
@@ -198,6 +205,12 @@ th, td{
 <td></td>
 <td>平凡社</td>
 <td>1981</td>
+</tr>
+<tr>
+<td><a href="https://mmurak.github.io/gGrandGendaiHyakkajiten/" target="_blank">『グランド現代百科事典』</a><sup>†</sup></td>
+<td></td>
+<td>学習研究社</td>
+<td>1980</td>
 </tr>
 </table>
 <h3>黄表紙関連</h3>
